@@ -1,41 +1,34 @@
-// Arrays
-
-const myArr = [0,1,2,3,4,5]
-
-// const newArr = new Array[1,2,3,4]
-// console.log(myArr[1]);
+const myFriends = ["ali" ,"ahmad", "usman", "asad"]
+const yourFriends = ["asmad", "asghar", "abid"]
 
 
-// Array-methods
+// myFriends.push(yourFriends)  // it only pushes 
+// console.log(myFriends);
 
-// myArr.push(6)
-// myArr.push(7)
-// myArr.pop()
+// const allFriends = myFriends.concat(yourFriends) // it is good but not famous methods
+// console.log(allFriends);
 
-// myArr.unshift(99)
-// myArr.shift()
+// const ourFriends = [...myFriends, ...yourFriends] // it returns same result but it is good practice this is spread mathod
+// console.log(ourFriends);
 
-// console.log(myArr.includes(9));
-// console.log(myArr.includes(5));
+// const another_array = [1,2,3,[4,5,5,5],8,4,[3,8,[5,6,73,5]]]
+// const real_another_array = another_array.flat(Infinity) //this flat methods flat everthing in array
+// console.log(real_another_array);
 
-// const newArr = myArr.join() // turns array into strings
+console.log(Array.isArray("sohail"));
+console.log(Array.from("sohail")); // it turns strings into array
+console.log(Array.from({name : "sohail"})); // it turns empty array
 
-// console.log(myArr);
-// console.log(newArr);
+let score1 = 100
+let score2 = 200
+let score3 = 300
 
-//slice splice
-
-console.log("A", myArr);
-
-const myn1 = myArr.slice(1,3)
-console.log(myn1);
-
-console.log("b", myArr);
-
-const myn2 = myArr.splice(1,3)
-console.log(myn2);
+console.log(Array.of(score1,score2, score3)); // interesting
 
 
-console.log("c", myArr);
 
-// important note! Difference between slice and splice is that slice not manipulate into actuall aray but splice does
+
+
+
+
+
