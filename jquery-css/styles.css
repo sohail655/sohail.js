@@ -1,0 +1,56 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Heading style */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Box styling */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+/* Button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d0d0d0;
+}
