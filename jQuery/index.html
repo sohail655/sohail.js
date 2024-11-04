@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title> JQuery</title>
+</head>
+<body>
+    <div id="test1">
+        <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur 
+            quas culpa natus corporis. Facilis, earum? Velit minima quas suscipit quibusdam, recusandae,
+          </p>
+    </div>
+    <div id="box" style="background-color: bisque; padding: 10px;">
+        <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis fuga eum aliquid fugiat quas
+            praesentium assumenda labore! Itaque, saepe. Architecto, commodi! Autem numquam culpa quisquam, totam
+            sapiente molestiae atque?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus quisquam iusto sunt ab sed excepturi, mollitia obcaecati at quaerat! Voluptatem corporis tempora numquam quaerat recusandae quia, omnis sequi harum obcaecati in explicabo, itaque dolor laudantium velit eius pariatur facilis. Aperiam ea distinctio et nulla at recusandae hic autem odio laboriosam? Officiis, labore, at praesentium voluptatum, magni officia blanditiis deserunt porro omnis obcaecati asperiores! Dolorum, dolore expedita temporibus soluta maiores similique tempora doloremque. Eum, fugiat quos. Inventore perferendis saepe qui similique hic in sequi quisquam, voluptatibus harum necessitatibus aut at, quos, error tenetur minima voluptates amet quas ea eum? Facilis quasi consequatur aut odit, maxime repellat officia ab non inventore molestiae qui reiciendis facere est laboriosam perferendis quae libero rerum neque optio quod doloribus, corporis ipsum quis. Qui earum obcaecati velit similique molestiae eligendi quasi, inventore exercitationem, neque laudantium illo animi harum quo doloremque alias laboriosam quae. Voluptatibus quam culpa dignissimos? Corrupti, distinctio, ratione libero odio vitae doloribus in aliquam deleniti ipsam quas dolor nihil eius, tempore ipsa tenetur! Commodi laborum voluptates beatae eius, enim necessitatibus tempora temporibus placeat id error perferendis asperiores tenetur sunt libero minus blanditiis voluptate repudiandae consequuntur eos dignissimos eaque. Repudiandae mollitia delectus eius ab laborum voluptates, accusantium itaque earum non rerum nihil laudantium deleniti molestiae similique in nisi ducimus vero! Nobis sunt quaerat debitis natus cupiditate ullam, quae at iure laudantium neque consequuntur molestiae? Dolorum quis repudiandae quia alias animi, nobis error molestias sit cupiditate fugit officia. Facilis nihil ratione dolore cum quod voluptate doloribus possimus officiis corporis asperiores iste harum hic voluptatibus dignissimos quidem beatae, minima a id consectetur necessitatibus quae! Eaque, aliquam facilis obcaecati maxime commodi, inventore sed, in modi nihil corporis recusandae quasi cupiditate odio possimus natus! Minima quis quos numquam esse ducimus sunt, illum exercitationem hic vero, veritatis delectus autem. Eos culpa similique labore sequi velit, deleniti odio provident exercitationem harum quam obcaecati ducimus nihil nam nobis et voluptas voluptate iste quae. Accusantium maxime tempora consequuntur, praesentium exercitationem dolorum! Iste temporibus molestias totam voluptates dolores eaque impedit cumque ipsam vero? Fugit, sequi? Est nulla temporibus officia illo excepturi omnis, veritatis, voluptatibus voluptatem beatae labore quis nesciunt earum repellendus ratione laborum amet, neque recusandae. Porro, voluptates eligendi alias illo quas iusto doloremque molestias perferendis libero et optio odit vero repellat vel? Quia, excepturi nemo! Culpa minus atque maxime perferendis sed saepe dicta! Mollitia rerum provident vitae, praesentium iure natus. Ullam, commodi nam? Tenetur, ex voluptatum temporibus quae odit enim sunt impedit rerum dolorum minus voluptas repellat, quisquam odio quidem! Maiores ut ea magni beatae! Natus sed esse numquam similique libero consectetur animi earum pariatur expedita, quia, fugit vitae ipsa excepturi dolorum dicta quam repellendus omnis? Beatae corporis eum iste corrupti optio nihil, reiciendis nostrum expedita amet animi! Odio sint, voluptatibus suscipit nulla enim itaque maxime consectetur facilis porro commodi dolorum aliquid amet, error non reiciendis doloremque sunt ducimus nemo harum! Voluptatibus, officiis, inventore dolore sunt cum saepe, eaque modi maxime facilis rem quas alias exercitationem. Voluptas dicta hic quisquam atque dignissimos deleniti soluta alias fugiat aut vitae? Sunt quos enim iure iusto, molestiae amet? Autem quas, consequuntur odit officiis totam ipsa veritatis optio eum et, eos quibusdam adipisci eligendi quos ipsam aspernatur voluptas, itaque nam sit soluta nisi fuga quis. Quod, porro sunt laudantium ipsum rem corrupti, quidem harum modi excepturi omnis amet vel temporibus dolorem officiis, labore sapiente necessitatibus incidunt quae reiciendis id distinctio. Assumenda veritatis magni saepe, tempore reiciendis, ad ut culpa ab necessitatibus voluptatem, ex nulla! Similique minus libero sit tenetur omnis totam, sapiente placeat quaerat voluptatum distinctio et doloribus, autem earum fugit debitis nisi? Nostrum, minima consequuntur. Quos!
+    </p>
+    </div>
+    <script>
+        $(document).ready(function(){
+           // ++++++++++++++++++++++++++++++++++++++++++++++++mouse events +++++++++++++++++++++++++++++++++++++++++
+            $("#box").click(function(){
+                $("#box").css("background-color", "green")
+            })
+            $("#box").dblclick(function(){
+                $("#box").css("background-color", "red")
+            })
+            $("#box").contextmenu(function(){
+                $("#box").css("background-color", "yellow")
+            })
+            $("#box").mouseenter(function(){
+                $("#box").css("background-color", "blue")
+            })
+            $("#box").mouseleave(function(){
+                $("#box").css("background-color", "purple")
+            })
+           
+//+++++++++++++++++++++++++++++++++++++++ key events ++++++++++++++++++++++++++++++++++++++++++
+            $("body").keydown(function(){
+             $(this).css("background-color", "red")
+            })
+            $("body").keyup(function(){
+             $(this).css("background-color", "yellow")
+            })
+            $("body").keypress(function(){
+             $(this).css("background-color", "blue")
+            })
+
+            $(window).scroll(function(){
+                console.log("you are scrolling");    
+            })
+            $(window).resize(function(){
+                console.log("you are resizing");   
+            })
+
+            //+++++++++++++++++++++++++++++++++++++++++++++++  get methods ++++++++++++++++++++++++++++++++++++
+
+            $("#test1").html(function(){
+                let val = $(this).html()
+                console.log(val);
+                
+            })
+            $("#test1").text(function(){
+                let val = $(this).text()
+                console.log(val);
+                
+            })
+
+        })
+    </script>
+</body>
+</html>
