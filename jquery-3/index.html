@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the content box */
+.content-box {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading style */
+.content-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Paragraph style */
+.content-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button style */
+.action-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+#red {
+    color: red;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="text-box" class="content-box">
+        <h2>Welcome to Our Site</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <button id="click" class="action-btn">click me</button>
+    </div>
+    
+<script>
+$(document).ready( function(){
+    $("#click").click(function(){
+        $("#text-box h2").text("Hello world")
+        $("#text-box p").text("text was changed")
+        $("#text-box h2").attr("id" , "red")
+    })
+} )
+</script>
+</body>
+</html>
