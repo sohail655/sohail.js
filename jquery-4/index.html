@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Class Methods Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>jQuery Class Methods</h1>
+    
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, laudantium.</p>
+    </div>
+
+    <div  class="button-container">
+        <button id="add" class="btn">Add Class</button>
+        <button id="remove" class="btn">Remove Class</button>
+        <button id="toggle" class="btn">Toggle Class</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+         $("#add").click(function(){
+         $("#box").addClass("first second ")
+         })
+         $("#remove").click(function(){
+         $("#box").removeClass("first ")
+         })
+         $("#toggle").click(function(){
+         $("#box").toggleClass(" second ")
+         })
+        })
+    </script>
+
+</body>
+</html>
