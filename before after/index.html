@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Class Methods Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="query.js"></script>
+</head>
+<body>
+
+    <h1>jQuery CSS Methods</h1>
+    
+    <div id="box" class="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, laudantium.</p>
+    </div>
+
+    <div class="button-container">
+        <button id="before" class="btn">before</button>
+        <button id="after" class="btn">after</button>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $("#before").click(function(){
+            $("#box").before("<h2>Sohail Ahmad</h2>")
+        })
+        $("#after").click(function(){
+            $("#box").after("<h2>Sohail Ahmad</h2>")
+        })
+        $("#after").click(function(){
+            $("#box").append("<h2>Sohail Ahmad</h2>")
+        })
+        $("#before").click(function(){
+            $("#box").prepend("<h2>Sohail Ahmad</h2>")
+        })
+       
+    })
+</script>
+</body>
+</html>
